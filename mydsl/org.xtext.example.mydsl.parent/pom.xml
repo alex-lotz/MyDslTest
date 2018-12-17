@@ -5,13 +5,16 @@
 	<artifactId>org.xtext.example.mydsl.parent</artifactId>
 	<packaging>pom</packaging>
 
+	<parent>
+		<groupId>mydsl</groupId>
+		<artifactId>mydsl</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	
 	<properties>
-		<tycho-version>1.0.0</tycho-version>
 		<xtextVersion>2.12.0</xtextVersion>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	
 	<modules>
 		<module>org.xtext.example.mydsl</module>
 		<module>org.xtext.example.mydsl.ide</module>
@@ -20,14 +23,6 @@
 		<module>org.xtext.example.mydsl.ui.tests</module>
 	</modules>
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tycho-version}</version>
-				<extensions>true</extensions>
-			</plugin>
-		</plugins>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -169,7 +164,7 @@
 					-->
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>tycho-compiler-plugin</artifactId>
-					<version>${tycho-version}</version>
+					<version>${tycho.version}</version>
 					<configuration>
 						<compilerArgument>-err:-forbidden</compilerArgument>
 					</configuration>
@@ -203,10 +198,4 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
-	<parent>
-		<groupId>mydsl</groupId>
-		<artifactId>mydsl</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
 </project>

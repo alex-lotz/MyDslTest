@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/mydsl.feature_1.0.0.qualifier.jar" id="mydsl.feature" version="1.0.0.qualifier">
+      <category name="MyDslCategory"/>
+   </feature>
+   <category-def name="MyDslCategory" label="MyDsl Category">
+      <description>
+         My DSL
+      </description>
+   </category-def>
+</site>
