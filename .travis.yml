@@ -2,6 +2,12 @@ sudo: true
 
 language: java
 
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      env: DISPLAY=:99.0
+
 cache:
   directories:
   - $HOME/.m2
