@@ -1,5 +1,5 @@
 # MyDslTest
 
-![TestImage](TestImage.png)
+![TestImage](/images/TestImage.png)
 
 Test Repository
