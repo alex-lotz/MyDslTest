@@ -1,5 +1,5 @@
 # Subfolder Test
 
-![TestImage](/images/TestImage.png)
+![TestImage](images/TestImage.png)
 
 Test Repository
